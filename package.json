@@ -1,0 +1,32 @@
+{
+  "name": "json-viewer",
+  "version": "1.0.0",
+  "description": "A beautiful JSON viewer extension built with Vue.js",
+  "author": {
+    "name": "7 Angle",
+    "email": "hello@7angle.com",
+    "url": "https://7angle.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/7angle/json-pilot"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean"
+  },
+  "dependencies": {
+    "vue": "^3.3.0",
+    "@vueuse/core": "^10.7.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.0",
+    "vite": "^5.0.0",
+    "sass": "^1.69.0",
+    "fs-extra": "^11.2.0",
+    "rimraf": "^5.0.5"
+  }
+} 
