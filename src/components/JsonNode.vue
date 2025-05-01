@@ -150,6 +150,11 @@ const toggleSelect = () => {
   
   if (!isSelected.value) {
     newPaths.push(props.path)
+    
+    // If this is an object/array, add all child paths
+    if (isObject.value) {
+      newPaths.push(...getAllChildPaths(props.value, props.path))
+    }
   }
   
   emit('select', newPaths)
@@ -213,6 +218,23 @@ defineExpose({
   &.selected {
     > .node-content {
       background-color: rgba(#70a1ff, 0.2);
+    }
+    
+    > .children {
+      background-color: rgba(#70a1ff, 0.1);
+      border-radius: 4px;
+      margin: 2px 0;
+      padding: 2px 0;
+      
+      .json-node {
+        .node-content {
+          background-color: transparent;
+          
+          &:hover {
+            background-color: rgba(#70a1ff, 0.15);
+          }
+        }
+      }
     }
   }
 }
