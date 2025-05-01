@@ -412,12 +412,16 @@ html, body {
   padding: 8px 16px;
   border-radius: 4px;
   border: 1px solid var(--border-color);
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   z-index: 1000;
   font-size: 13px;
+  opacity: 0;
+  visibility: hidden;
   
   &.show {
     transform: translateX(-50%) translateY(0);
+    opacity: 1;
+    visibility: visible;
   }
 }
 

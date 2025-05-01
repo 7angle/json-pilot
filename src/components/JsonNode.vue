@@ -149,12 +149,8 @@ const toggleSelect = () => {
   const newPaths = []
   
   if (!isSelected.value) {
+    // Only add the current path, don't automatically select children
     newPaths.push(props.path)
-    
-    // If this is an object/array, add all child paths
-    if (isObject.value) {
-      newPaths.push(...getAllChildPaths(props.value, props.path))
-    }
   }
   
   emit('select', newPaths)
