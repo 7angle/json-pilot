@@ -27,12 +27,6 @@ A powerful browser extension for viewing, formatting, and exploring JSON content
 3. Enable "Developer mode" in the top right
 4. Click "Load unpacked" and select the extension directory
 
-### Firefox Installation
-1. Download the latest release from [GitHub Releases](https://github.com/7angle/json-pilot/releases)
-2. Open Firefox and navigate to `about:debugging`
-3. Click "This Firefox" in the sidebar
-4. Click "Load Temporary Add-on" and select the `manifest.json` file
-
 ## 💻 Development
 
 ### Prerequisites
