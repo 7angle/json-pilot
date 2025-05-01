@@ -130,6 +130,11 @@ const handleNodeSelect = async (paths) => {
         value = value[key]
       }
       
+      // If it's a root selection (empty path), return the value directly
+      if (pathSegments.length === 0) {
+        return value
+      }
+      
       let current = acc
       for (let i = 0; i < pathSegments.length - 1; i++) {
         const key = pathSegments[i]

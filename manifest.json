@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "JSON Pilot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Take control of your JSON data with powerful viewing tools.",
   "author": "7 Angle <hello@7angle.com> (https://7angle.com)",
   "permissions": [
